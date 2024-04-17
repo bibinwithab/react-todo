@@ -4,7 +4,7 @@ import { BsBookmarkCheckFill } from "react-icons/bs";
 
 // eslint-disable-next-line react/prop-types
 const Edit = ({ editTodo, task }) => {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState(task.task);
 
   const handleSubmit = (e) => {
     e.preventDefault();
